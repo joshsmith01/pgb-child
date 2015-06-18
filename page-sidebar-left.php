@@ -7,6 +7,7 @@
 get_header(); ?>
 
 	<?php get_sidebar(); ?>
+  <?php // Use one sidebar instead of registering another. Change layout based on what page is called ?>
 	<?php 
     	if ( is_page_template( 'page-sidebar-left.php' ) ) { ?>
     	<div id="content" class="main-content-inner col-sm-12 col-md-8"><?php
