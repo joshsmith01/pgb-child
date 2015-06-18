@@ -7,8 +7,16 @@
 get_header(); ?>
 
 	<?php get_sidebar(); ?>
+	<?php 
+    	if ( is_page_template( 'page-sidebar-left.php' ) ) { ?>
+    	<div id="content" class="main-content-inner col-sm-12 col-md-8"><?php
+    } else { ?>
+    	<div id="content" class="main-content-inner col-sm-12 col-md-8 col-lg-9"><?php
+    }
+  ?>
 
-	<div id="content" class="main-content-inner col-sm-12 col-md-8 col-lg-9">
+
+
 
 		<?php tha_content_top(); ?>
 
